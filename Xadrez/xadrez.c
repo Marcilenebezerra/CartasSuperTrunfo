@@ -15,13 +15,28 @@ int main() {
         casas_bispo++;
     }
     
-    // Movimento da Rainha (8 casas para a esquerda) usando do-while
+    
     printf("\nMovimento da Rainha (8 casas para a esquerda):\n");
     int casas_rainha = 0;
     do {
         printf("Esquerda\n");
         casas_rainha++;
     } while (casas_rainha < 8);
+    
+    
+    printf("\nMovimento do Cavalo (2 casas para baixo e 1 para a esquerda):\n");
+    
+    // Primeira parte do L: 2 casas para baixo (usando for)
+    for (int i = 0; i < 2; i++) {
+        printf("Baixo\n");
+    }
+    
+   
+    int casa_esquerda = 0;
+    while (casa_esquerda < 1) {
+        printf("Esquerda\n");
+        casa_esquerda++;
+    }
     
     return 0;
 }
